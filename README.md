@@ -152,7 +152,7 @@ Sigue los pasos a continuación para ejecutar el proyecto de forma local.
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/SistemaGestionAcademica.git
+git clone https://github.com/RayfelO/Estudiantes-React-Django.git
 cd SistemaGestionAcademica
 ```
 
