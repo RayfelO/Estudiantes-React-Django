@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="Sistema de Gestión Académica" width="100">
+  <img src="assets/logo.svg" alt="Sistema de Gestión Académica" width="180">
 </p>
 
 <h1 align="center">Sistema de Gestión Académica</h1>
@@ -64,21 +64,21 @@ Puedes ver una demostración completa del sistema en el siguiente video:
       <sub>Pantalla de Inicio</sub>
     </td>
     <td align="center">
-      <img src="assets/admin.png" alt="Panel Administrativo" width="100%">
+      <img src="assets/estudiante.png" alt="Vista del Estudiante" width="100%">
       <br>
-      <sub>Panel Administrativo</sub>
+      <sub>Vista del Estudiante</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
+      <img src="assets/admin.png" alt="Panel Administrativo" width="100%">
+      <br>
+      <sub>Panel Administrativo</sub>
+    </td>
+    <td align="center">
       <img src="assets/profesor.png" alt="Vista del Profesor" width="100%">
       <br>
       <sub>Vista del Profesor</sub>
-    </td>
-    <td align="center">
-      <img src="assets/estudiante.png" alt="Vista del Estudiante" width="100%">
-      <br>
-      <sub>Vista del Estudiante</sub>
     </td>
   </tr>
 </table>
