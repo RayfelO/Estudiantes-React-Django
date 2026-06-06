@@ -57,7 +57,7 @@ Flujo operativo de alto nivel que describe como las entidades academicas (carrer
 - [[Modulo Core]] (todos los modelos de dominio).
 - [[Modulo Ciclos Academicos]] (seleccion de materias).
 - [[Modulo Asignaturas por Ciclo]] (retiro/eliminar).
-- [[Modulo Profesor]] (registro de calificaciones).
+- [[Modulo API Profesor]] (registro de calificaciones).
 - [[Modulo Frontend]] (visualizacion, reportes PDF).
 
 ## Diagrama Mental

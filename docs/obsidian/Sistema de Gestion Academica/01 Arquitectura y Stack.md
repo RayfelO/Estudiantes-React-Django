@@ -27,12 +27,12 @@ aliases:
 
 ## Modulos de la Solucion
 
-- **[[Modulo Core]]**: Modelos centralizados, permisos custom, serializadores y autenticacion. Es el nucleo del dominio.
-- **[[Modulo Estudiante]]**: Endpoints especificos para el actor estudiante (perfil, calificaciones, record academico, login).
-- **[[Modulo Profesor]]**: Endpoints para el actor profesor (perfil, asignacion de calificaciones, revision de notas, listado de asignaturas).
-- **[[Modulo Ciclos Academicos]]**: Logica de seleccion de materias por parte del estudiante dentro de un ciclo academico.
-- **[[Modulo Asignaturas por Ciclo]]**: Gestion de calificaciones numericas y letras, retiro de materias.
-- **[[Modulo Frontend]]**: SPA React generado desde Figma con flujos independientes para estudiante y profesor.
+- [[Modulo Core]]: Modelos centralizados, permisos custom, serializadores y autenticacion. Es el nucleo del dominio.
+- [[Modulo API Estudiante]]: Endpoints especificos para el actor estudiante (perfil, calificaciones, record academico, login).
+- [[Modulo API Profesor]]: Endpoints para el actor profesor (perfil, asignacion de calificaciones, revision de notas, listado de asignaturas).
+- [[Modulo Ciclos Academicos]]: Logica de seleccion de materias por parte del estudiante dentro de un ciclo academico.
+- [[Modulo Asignaturas por Ciclo]]: Gestion de calificaciones numericas y letras, retiro de materias.
+- [[Modulo Frontend]]: SPA React generado desde Figma con flujos independientes para estudiante y profesor.
 
 ## Patrones de Arquitectura
 

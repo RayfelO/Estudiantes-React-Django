@@ -37,7 +37,7 @@ Responsabilidad principal: Contener los modelos de dominio, serializadores, perm
 - `ReadOnlyProfessor`: Permite solo metodos GET/HEAD/OPTIONS a usuarios con perfil de profesor. Usado para que profesores vean listados de estudiantes.
 
 ## Dependencias
-- Utilizado por [[Modulo Estudiante]], [[Modulo Profesor]], [[Modulo Ciclos Academicos]] y [[Modulo Asignaturas por Ciclo]] para acceso a modelos y permisos.
+- Utilizado por [[Modulo API Estudiante]], [[Modulo API Profesor]], [[Modulo Ciclos Academicos]] y [[Modulo Asignaturas por Ciclo]] para acceso a modelos y permisos.
 - Define `AUTH_USER_MODEL = "core.User"` en settings.
 
 ## Observaciones

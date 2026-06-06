@@ -21,7 +21,7 @@ Flujo operativo que permite a estudiantes y profesores acceder al sistema median
    - El frontend envia un POST a:
      - `/api/v1/students/login/` si selecciona rol estudiante.
      - `/api/v1/professor/login/` si selecciona rol profesor.
-   - En la practica, ambos endpoints son `TokenObtainPairView` con serializadores distintos ([[Modulo Estudiante]] y [[Modulo Profesor]]).
+   - En la practica, ambos endpoints son `TokenObtainPairView` con serializadores distintos ([[Modulo API Estudiante]] y [[Modulo API Profesor]]).
 
 3. **Validacion y emision de token**
    - El backend valida las credenciales contra el modelo `User` ([[Modulo Core]]).
@@ -40,7 +40,7 @@ Flujo operativo que permite a estudiantes y profesores acceder al sistema median
 5. **Recuperacion de contrasena**
    - Desde la pantalla de login, el usuario puede acceder a `/recuperar-contraseña`.
    - Se envia un POST a `/api/v1/students/reset-password/` con el email.
-   - El backend busca el usuario por email y actualiza la contrasena directamente (sin token de reseteo). [[Modulo Estudiante]].
+   - El backend busca el usuario por email y actualiza la contrasena directamente (sin token de reseteo). [[Modulo API Estudiante]].
 
 ## Entidades y Estados Importantes
 
@@ -50,8 +50,8 @@ Flujo operativo que permite a estudiantes y profesores acceder al sistema median
 
 ## Modulos Involucrados
 - [[Modulo Core]] (modelos User, autenticacion JWT).
-- [[Modulo Estudiante]] (`StudentLoginView`, `PasswordResetView`).
-- [[Modulo Profesor]] (`ProfessorLoginView`).
+- [[Modulo API Estudiante]] (`StudentLoginView`, `PasswordResetView`).
+- [[Modulo API Profesor]] (`ProfessorLoginView`).
 - [[Modulo Frontend]] (`LogIn`, manejo de tokens, redireccion).
 
 ## Diagrama Mental

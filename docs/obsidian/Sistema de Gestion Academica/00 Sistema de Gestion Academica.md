@@ -17,8 +17,8 @@ Aplicacion web full-stack para la gestion academico-administrativa universitaria
 
 ### Modulos del Sistema
 - [[Modulo Core]]
-- [[Modulo Estudiante]]
-- [[Modulo Profesor]]
+- [[Modulo API Estudiante]]
+- [[Modulo API Profesor]]
 - [[Modulo Ciclos Academicos]]
 - [[Modulo Asignaturas por Ciclo]]
 - [[Modulo Frontend]]
@@ -30,10 +30,9 @@ Aplicacion web full-stack para la gestion academico-administrativa universitaria
 - [[Flujo de Gestion Academica]]
 
 ### Decisiones y Diseno
-- [[Autenticacion JWT con Roles Separados]]
-- [[Modelo de Datos Centralizado en Core]]
-- [[Frontend Generado desde Figma]]
-- [[Calificaciones Automaticas por Rango]]
+- [[Autenticacion y Autorizacion]]
+- [[Modelo de Datos y Persistencia]]
+- [[Arquitectura Modular y Frontend Transpilado]]
 
 ### Ambientes y Despliegue
 - [[Configuracion Local de Desarrollo]]

@@ -19,7 +19,7 @@ Flujo operativo completo que un estudiante sigue dentro del sistema: desde el da
 
 2. **Seleccion de materias**
    - El estudiante accede al wizard de seleccion (`SeleccionEstudiante` -> `SeleccionEstudiante1` -> `SeleccionEstudiante2`).
-   - El frontend muestra las asignaturas disponibles obtenidas de [[Modulo Profesor]] (`SubjectList`).
+   - El frontend muestra las asignaturas disponibles obtenidas de [[Modulo API Profesor]] (`SubjectList`).
    - Al confirmar, el frontend envia un POST a `/api/v1/academic-cycles/{id}/` ([[Modulo Ciclos Academicos]]).
    - El backend valida que la asignatura no este duplicada en ese ciclo (`IntegrityError` -> HTTP 409).
    - Si es exitoso, la materia queda registrada en `SubjectCycle` vinculada al `AcademicCycle` del estudiante.
@@ -29,7 +29,7 @@ Flujo operativo completo que un estudiante sigue dentro del sistema: desde el da
    - Puede optar por eliminar una materia (DELETE a `/api/v1/subject-cycles/{id}/`) o retirarla (DELETE a `/api/v1/subject-cycles/{id}/detail/` que marca letra "R"). [[Modulo Asignaturas por Ciclo]].
 
 4. **Consulta de calificaciones**
-   - En `/calificaciones-estudiante`, el frontend solicita las calificaciones a `/api/v1/students/profile/grades/` ([[Modulo Estudiante]]).
+   - En `/calificaciones-estudiante`, el frontend solicita las calificaciones a `/api/v1/students/profile/grades/` ([[Modulo API Estudiante]]).
    - El backend retorna todas las `SubjectCycle` del estudiante con `midterm_grade`, `final_grade` y `final_grade_letter`.
    - El frontend puede visualizar graficos usando `chart.js`.
 
@@ -44,10 +44,10 @@ Flujo operativo completo que un estudiante sigue dentro del sistema: desde el da
 - `overall_gpa` / `last_gpa`: Campos del perfil del estudiante. Se asume que se actualizan fuera de banda o manualmente.
 
 ## Modulos Involucrados
-- [[Modulo Estudiante]] (perfil, calificaciones, record academico).
+- [[Modulo API Estudiante]] (perfil, calificaciones, record academico).
 - [[Modulo Ciclos Academicos]] (registro de materias).
 - [[Modulo Asignaturas por Ciclo]] (eliminacion y retiro).
-- [[Modulo Profesor]] (listado de asignaturas disponibles).
+- [[Modulo API Profesor]] (listado de asignaturas disponibles).
 - [[Modulo Frontend]] ( todas las paginas del flujo estudiante).
 
 ## Diagrama Mental

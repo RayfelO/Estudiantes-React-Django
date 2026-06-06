@@ -34,7 +34,7 @@ Responsabilidad principal: Proporcionar la interfaz de usuario como Single Page 
 - `@react-pdf/renderer`: Generacion de reportes academicos en PDF.
 
 ## Dependencias
-- Consume la API REST expuesta por [[Modulo Estudiante]] y [[Modulo Profesor]].
+- Consume la API REST expuesta por [[Modulo API Estudiante]] y [[Modulo API Profesor]].
 - Depende del claim `is_student` / `is_professor` del JWT para enrutamiento y permisos de UI.
 
 ## Observaciones
